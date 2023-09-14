@@ -34,7 +34,6 @@
             .content section {
                 height: auto;
                 padding-bottom: 30px;
-                display: flex;
                 align-items: center;
                 justify-content: center;
             }
@@ -244,6 +243,64 @@
                     font-size: 14px;
                     /* Adjust paragraph font size for smaller screens */
                 }
+                span {
+                    font-size: 14px;
+                }
+            }
+            
+            @media screen and (max-width: 360px) {
+                .container {
+                    padding: 5px;
+                    /* Adjust padding for smaller screens */
+                }
+                .section {
+                    padding: 5px 0;
+                    /* Adjust padding for smaller screens */
+                }
+                h1,
+                h2,
+                h3 {
+                    font-size: 16px;
+                    /* Adjust heading font size for smaller screens */
+                }
+                p {
+                    font-size: 14px;
+                    /* Adjust paragraph font size for smaller screens */
+                }
+                span {
+                    font-size: 14px;
+                }
+            }
+            
+            @media screen and (max-width: 500px) {
+                .section .homepage {
+                    padding: 5px 0;
+                    /* Adjust padding for smaller screens */
+                }
+                h1 {
+                    font-size: 16px;
+                    /* Adjust heading font size for smaller screens */
+                }
+                h2 {
+                    font-size: 16px;
+                    /* Adjust heading font size for smaller screens */
+                }
+                h3 {
+                    font-size: 16px;
+                    /* Adjust heading font size for smaller screens */
+                }
+                p {
+                    font-size: 14px;
+                    /* Adjust paragraph font size for smaller screens */
+                }
+                span {
+                    font-size: 14px;
+                }
+            }
+            
+            .homepage {
+                height: auto;
+                width: auto;
             }
             
             .homepage {
@@ -418,7 +475,7 @@
             }
             
             .about .row-2 .skills {
-                width: 35%;
+                width: 30%;
             }
             
             .about .row-2 .skills .progress {
@@ -469,11 +526,12 @@
                 flex-wrap: wrap;
                 gap: 8px;
                 padding: 1rem;
-                margin-left: 0px;
+                margin-left: 5px;
+                width: 60%;
             }
             
             .about .row-2 .box-container .box {
-                flex: 1 1 20rem;
+                flex: 1 1 15rem;
                 background: white;
                 padding: 1rem;
                 border-radius: .5rem;
@@ -598,7 +656,7 @@
             /*protfolio start*/
             
             .gallary {
-                width: 100%;
+                width: auto;
                 height: auto;
                 padding: 70px 0;
             }
@@ -740,13 +798,15 @@
             }
             
             .contact .row {
+                justify-content: center;
                 display: flex;
                 flex-wrap: wrap;
-                gap: 1.5rem;
+                gap: 4rem;
+                width: auto;
             }
             
             .contact .row form {
-                flex: 1 1 600px;
+                width: 46%;
                 background: #0C4A60;
                 padding: 2rem;
                 border-radius: 2rem;
@@ -757,9 +817,8 @@
             }
             
             .contact .row .map {
-                flex: 1 1 30rem;
+                width: 46%;
                 border: 20px solid black;
-                width: 100%;
                 border-radius: .5rem;
             }
             
